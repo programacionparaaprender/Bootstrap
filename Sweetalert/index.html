@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Ejemplo de sweetalert</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicital-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+       
+        <!-- Estilos Bootstrap 4 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Iconos fonts awesome 5 -->
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <script src="js/all.js"></script>
+
+        <!-- Estilos personalizados del web -->
+        <link rel="stylesheet" href="css/sweetalert.css">
+        <script src="js/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <section>
+            <div>
+                <button class="btn btn-primary" onclick="clicAlert()">Input alert</button>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+        <script>
+            async function clicAlert(){
+                swal({
+                    title: "An input!",
+                    text: "Write something interesting:",
+                    type: "input",
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    animation: "slide-from-top",
+                    inputPlaceholder: "Write something"
+                },
+                function(inputValue){
+                if (inputValue === false) return false;
+
+                if (inputValue === "") {
+                    swal.showInputError("You need to write something!");
+                    return false
+                }
+
+                swal("Nice!", "You wrote: " + inputValue, "success");
+                });
+            }
+        </script>
+    </body>
+</html>

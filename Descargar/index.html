@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Ejemplo de sweetalert</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicital-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+       
+        <!-- Estilos Bootstrap 4 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Iconos fonts awesome 5 -->
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <script src="js/all.js"></script>
+
+        <!-- Estilos personalizados del web -->
+        <link rel="stylesheet" href="css/sweetalert.css">
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/axios.min.js"></script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <section>
+            <div>
+                <button class="btn btn-primary" onclick="decargarExel()">Descargar excel</button>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+        <script>
+            async function decargarExel(){
+                try{
+                    let Excel = `archivos/Lista de precios para soporte Técnico.xls`;
+                    let options = {
+                        responseType: 'blob',
+
+                    }
+                    const headers = {
+                        'Content-Type': 'text/plain',
+                        'Authorization': 'Basic YWxhZGRpbjpvcGVuc2VzYW1l'
+                    };
+                    const response = await axios.get(Excel, options)
+                    const url = window.URL.createObjectURL(new Blob([response.data]));
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.setAttribute('download', 'FormatoImportarUsuarios.xls');
+                    document.body.appendChild(link);
+                    link.click();
+                }catch(error){
+                    console.log(error)
+                }
+                
+            }
+        </script>
+    </body>
+</html>

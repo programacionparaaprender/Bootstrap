@@ -1,0 +1,35 @@
+https://www.udemy.com/course/curso-fundamentos-de-bootstrap-4/learn/lecture/5827700?start=0#overview
+
+
+no incluye flex por defecto habilitado
+no incluye graphicons bootstrap
+usa unidad de medida rems
+sustituyeron less por sass
+koala sass compilador de sass
+
+https://getbootstrap.com/docs/4.0/getting-started/download/
+
+curso de bootstrap
+https://www.udemy.com/course/curso-fundamentos-de-bootstrap-4/learn/lecture/5827726#overview
+
+
+códigos y estilos bootstrap
+https://hackerthemes.com/bootstrap-cheatsheet/#float-right
+
+clases para padding y margin
+https://getbootstrap.com/docs/4.4/utilities/spacing/
+
+
+Directorio de recursos para Bootstrap 4 (Plantillas, plugins, extensiones)
+Diseños en Photohop(PSD) para Bootstrap 4:
+- Por Hackerthemes: https://hackerthemes.com/blog/bootstrap-4-psd-template/
+
+Plantillas para Bootstrap 4:
+- Admin Dashboard: https://www.bootstrapzero.com/bootstrap-template/bootstrap-4-admin-dashboard
+- Modular Admin: https://github.com/modularcode/modular-admin-html
+
+Generadores de Layout online para Bootstrap 4:
+-.Pingendo: http://v4.pingendo.com/playground.html
+- Bootply: http://www.bootply.com/
+- Layoutit: http://www.layoutit.com/es
+- Bootstrapstudio: https://bootstrapstudio.io/(Muy buena, pero de pago).
