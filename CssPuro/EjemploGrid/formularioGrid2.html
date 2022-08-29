@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Grid Layout 2</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-gap: 16px;
+        }
+        /* esto hace que ocupe dos recuadros*/
+        .full-width {
+            grid-column: 1 / 3;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-gap: 16px;
+        }
+        .contacts{
+            color:white;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de formulario funcionando</h1>
+    <form style="border: 1px solid #ccc; margin:auto;width: 50rem;">
+        <div class="container">
+            <div class="contacts" style="padding:1rem;">
+                <h3>Our contacts</h3>
+          
+                <ul>
+                  <li>San Joe St.</li>
+                  <li>00-1212121-11</li>
+                  <li>mail@mail.com</li>
+                </ul>
+            </div>
+            <div class="container" style="padding:1rem;">
+                <label>First Name</label>
+                <input type="text" /> 
+                <label>Last Name</label>
+                <input type="text" /> 
+                <label>Job</label>
+                <input type="text" /> 
+                <label>Age</label>
+                <input type="text" /> 
+                <label>Email</label>
+                <input type="text" />
+                <label>Write your message</label>
+                <textarea class="full-width" name="" id="" cols="30" rows="7"></textarea>
+                <input class="full-width" type="submit" /> 
+            </div>
+                 
+        </div>
+          
+    </form>
+    
+    <form class="container" style="border: 1px solid #ccc; margin:auto;width: 50rem; padding:1rem;">
+        <label>First Name</label>
+        <input type="text" /> 
+        <label>Last Name</label>
+        <input type="text" /> 
+        <label>Job</label>
+        <input type="text" /> 
+        <label>Age</label>
+        <input type="text" /> 
+        <label>Email</label>
+        <input type="text" />
+        <label></label>
+        <input type="submit" />        
+    </form>
+
+</body>
+</html>
