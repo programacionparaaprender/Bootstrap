@@ -1,0 +1,67 @@
+main > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+}
+
+main {
+    display: grid;
+    grid-gap: 1rem;
+}
+@media (max-width: 576px){
+    main {
+        grid-template-areas:
+        "header"
+        "izquierda"
+        "article"
+        "derecha"
+        "footer"
+    ;
+    }
+}
+main2 > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+}
+main2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header header header"
+        "izquierda contenido derecha"
+        "footer footer ."
+        ;
+}
+@media (min-width: 576px){
+    main {
+        grid-template-areas:
+            "header header header"
+            "izquierda contenido derecha"
+            "footer footer footer"
+            ;
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+aside:first-of-type {
+    grid-area: izquierda;
+}
+
+article {
+    grid-area: contenido;
+}
+
+aside:last-of-type {
+    grid-area: derecha;
+}
+
+footer {
+    grid-area: footer;
+}
+.login{
+    grid-area: login;
+}
