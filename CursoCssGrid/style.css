@@ -1,3 +1,19 @@
+main5 {
+    height: 100vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+
+.numeros3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+}
+
 main4 {
     height: 100vh;
     display: grid;
@@ -27,6 +43,12 @@ main3 {
     /* grid-column-start: 1;
     grid-column-end: -1; */
     grid-column: 1 / -1;
+}
+
+.numeros2:nth-child(6){
+    background-color: teal;
+    grid-column-start: 2;
+    grid-column-end: 4; 
 }
 
 .numeros {
