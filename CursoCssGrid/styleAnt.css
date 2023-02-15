@@ -1,0 +1,256 @@
+
+main8 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'header header header header header'
+        'izquierda contenido contenido contenido derecha'
+        'pie pie pie pie pie';
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+@media (max-width: 590.3px) {
+    main8 {
+        grid-template-areas:
+            'header'
+            'izquierda'
+            'contenido'
+            'derecha'
+            'pie';
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }  
+}
+
+main8 > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera8 { grid-area: header; }   
+.izquierda8 { grid-area: izquierda; }   
+aside:first-of-type { background-color: aquamarine; }
+aside:last-of-type { background-color: azure; }
+.derecha8 { grid-area: derecha; }   
+.contenido8 { grid-area: contenido; }
+.pie8 { grid-area: pie; }  
+
+main7 > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+}
+
+main7 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+@media (max-width: 591.90px) {
+    main7 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }   
+}
+/* @media (max-width: 891.90px) {
+    main7 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }   
+} */
+
+@media (min-width: 591.90px) {
+    main7 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }   
+}
+
+main6 > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+}
+
+main6 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns:
+        [sidebar-start] 1fr
+        [sidebar-end contenido-start] 2fr
+        [contenido-end];
+    grid-template-rows:
+        [header-start] 1fr
+        [header-end contenido-start] 2fr
+        [contenido-end footer-start] 1fr
+        [footer-end];
+}
+
+header {
+    grid-column: sidebar-start / contenido-end;
+    grid-row: header-start / header-end;
+}
+aside {
+    grid-row: contenido-start / footer-end;
+    grid-column: sidebar-start / sidebar-end;
+}
+article {
+    grid-column: contenido-start / contenido-end;
+    grid-row: contenido-start / -1;
+}
+footer {
+    grid-column: sidebar-start / contenido-end;  
+}
+
+/*quitar lo anterior para que funcione lo inicial*/
+
+.numeros4 {
+    background-color: blueviolet;
+    border: 1px black solid;
+}
+
+main5 {
+    height: 100vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    /* grid-template-rows: repeat(3, auto); */
+    grid-auto-rows: 1fr;
+}
+
+panel1 {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px #ccc solid;
+    height: 4rem;
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-template-columns: auto 1fr auto;
+}
+
+
+
+.numeros3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+}
+
+main4 {
+    height: 100vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+main3 {
+    height: 100vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+}
+
+.numeros2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+}
+/*ubicarnos en el número 9*/
+/*grid-column-end: 5; para que llegue al número cinco*/
+/*grid-column-end: -1; para que siempre llegue al final*/
+.numeros2:nth-child(9){
+    background-color: teal;
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+    grid-column: 1 / -1;
+}
+
+.numeros2:nth-child(6){
+    background-color: teal;
+    grid-column-start: 2;
+    grid-column-end: 4; 
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+main > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+}
+
+main {
+    display: grid;
+    grid-gap: 1rem;
+}
+@media (max-width: 576px){
+    main {
+        grid-template-areas:
+        "header"
+        "izquierda"
+        "article"
+        "derecha"
+        "footer"
+    ;
+    }
+}
+main2 > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+}
+main2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header header header"
+        "izquierda contenido derecha"
+        "footer footer ."
+        ;
+}
+@media (min-width: 576px){
+    main {
+        grid-template-areas:
+            "header header header"
+            "izquierda contenido derecha"
+            "footer footer footer"
+            ;
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+aside:first-of-type {
+    grid-area: izquierda;
+}
+
+article {
+    grid-area: contenido;
+}
+
+aside:last-of-type {
+    grid-area: derecha;
+}
+
+footer {
+    grid-area: footer;
+}
+.login{
+    grid-area: login;
+}
