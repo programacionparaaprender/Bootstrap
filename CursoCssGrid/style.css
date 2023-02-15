@@ -1,3 +1,41 @@
+main4 {
+    height: 100vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+main3 {
+    height: 100vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+}
+
+.numeros2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+}
+/*ubicarnos en el número 9*/
+/*grid-column-end: 5; para que llegue al número cinco*/
+/*grid-column-end: -1; para que siempre llegue al final*/
+.numeros2:nth-child(9){
+    background-color: teal;
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+    grid-column: 1 / -1;
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
 main > * {
     background-color: burlywood;
     padding: 1rem;
