@@ -1,3 +1,33 @@
+main11 {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 2rem 0;
+}
+
+main11 .numero11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+.auto-fill .numero11{
+    background-color:teal;
+    color: white;
+}
+
+.auto-fit .numero11{
+    background-color:brown;
+    color: white;
+}
+
+.auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+}
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+}
+
+
 main10 {
     display: grid;
     grid-gap: 1rem;
