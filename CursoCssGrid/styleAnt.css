@@ -1,3 +1,42 @@
+main10 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 
+    [col-lg-start] minmax(7rem, 1fr)
+    [col-lg-end col-md-start] minmax(4rem, 1fr)
+    [col-md-end col-sm-start] minmax(2rem, 1fr)
+    [col-sm-end]
+    )
+    [end]
+    ;
+}
+
+main10 > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+}
+.primero:first-of-type {
+    background-color: red;
+    grid-column: start / end;
+}
+
+
+main9 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(2rem, 1fr));
+}
+
+main9 > * {
+    background-color: burlywood;
+    padding: 1rem;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+}
 
 main8 {
     display: grid;
