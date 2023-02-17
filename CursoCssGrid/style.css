@@ -1,15 +1,27 @@
-main12 {
+main14 {
     display: grid;
     grid-gap: 1rem;
     height: 100vh;
-    grid-template-columns: 20rem 7rem;
-    grid-auto-flow: column dense;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, auto));
 }
 
-.numero12 {
+.numero14 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+}
+
+main14 > .numero14 {
     background-color: aquamarine;
+}
+
+main14 > .numero14:nth-child(4) {
+    background-color: #fff;
+    display: block;
+}
+
+main15 {
+    display: grid;
+    grid-gap: 1rem;
+    height: 100%;
 }
