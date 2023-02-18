@@ -1,3 +1,43 @@
+main14 {
+    display: grid;
+    grid-gap: 1rem;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, auto));
+}
+
+.numero14 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main14 > .numero14 {
+    background-color: aquamarine;
+}
+
+main14 > .numero14:nth-child(4) {
+    background-color: #fff;
+    display: block;
+}
+
+main15 {
+    display: grid;
+    grid-gap: 1rem;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.numero15 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main15 .numero15 {
+    background-color: orange;
+}
+
+
 main13 {
     display: grid;
     grid-gap: 1rem;
