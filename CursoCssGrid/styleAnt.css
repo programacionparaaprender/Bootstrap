@@ -1,3 +1,103 @@
+main18{
+    display: grid;
+    grid-gap: 1rem;
+    height: 100vh;
+    grid-template:
+        /*filas */
+        repeat(4, 4rem)
+        /
+        /*columnas*/
+        repeat(3, 1fr)
+    ;
+    justify-items: stretch;
+    align-items: start;
+}
+
+main18 > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+main17{
+    display: grid;
+    grid-gap: 1rem;
+    height: 100vh;
+    grid-template:
+        /*filas */
+        repeat(4, 4rem)
+        /
+        /*columnas*/
+        repeat(3, 1fr)
+    ;
+}
+
+main17 > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+main16 {
+    display: grid;
+    grid-gap: 1rem;
+    height: 100vh;
+    /* grid-template-areas:
+        "header header header"
+        "izquierda contenido derecha1"
+        "izquierda contenido derecha2"
+        "footer footer footer"
+        ;
+    grid-template-rows:
+        [header-start] 1fr [contenido-start] 2fr 1fr 1fr [footer-end]
+    ;
+    grid-template-columns:
+        [inicio] 1fr [contenido-start] 2fr 1fr [fin]
+    ; */
+    grid-template:
+        /*filas */
+        [inicio] "header header header" 1fr
+        [contenido-start] "izquierda contenido derecha1" 2fr
+        "izquierda contenido derecha2" 1fr
+        [footer-start] "footer footer footer" 1fr [fin]
+        /
+        /*columnas*/
+        [inicio] 1fr [contenido-start] 2fr 1fr [fin]
+    ;
+}
+
+main16 > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+main16 header {
+    grid-area: header;
+}
+
+main16 .cIzquierda {
+    grid-area: izquierda;
+}
+
+main16 article {
+    grid-area: contenido;
+}
+main16 .cDerecha1{
+    grid-area: derecha1;
+}
+
+main16 .cDerecha2 {
+    grid-area: derecha2;
+}
+
+main16 footer {
+    grid-area: footer;
+}
+
 main14 {
     display: grid;
     grid-gap: 1rem;
