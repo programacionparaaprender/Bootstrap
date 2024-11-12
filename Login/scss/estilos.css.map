@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAI;EACA,OAAO,EAAE,IAAI",
-"sources": ["estilos.scss"],
-"names": [],
-"file": "estilos.css"
-}
+{"version":3,"sources":["estilos.scss","estilos.css"],"names":[],"mappings":"AACA;;;;GAAA;AAKA;EACI,wDAAA;EACA,sBAAA;EACA,aAAA;ACAJ;;ADGA;EACI,wBAAA;ACAJ;;ADIA;EACI,yBAAA;EACA,iBAAA;EACA,yBAAA;ACDJ;;ADIA;EACI,gCAAA;ACDJ;;ADIA;EACI,iBAAA;EACA,sBAAA;ACDJ;;ADIA;EACI,WAAA;ACDJ;;ADGA;EACI,aAAA;ACAJ","file":"estilos.css"}

@@ -2,3 +2,49 @@
 	font-size: 30px;
 	color:green;
 }
+
+.container {
+	/*background: #7F4545;*/
+	width: 50%;
+	p{
+		font-size: 20px;
+		text-align: right;
+	}
+}
+
+$fondo:#2DF5E0;
+$altura: 50vh;
+$relleno: 50px;
+$alineacion: center;
+$primario: #B10A0A;
+$secundario: #0D690D;
+$color: red;
+$span: uppercase;
+.section {
+	background:$fondo;
+	height:$altura * 2;
+	padding: $relleno; 
+}
+
+#parra {
+	$tamaño:20px;
+	$color: #164806;
+	font-size: $tamaño;
+	color: $color;
+	text-align: $alineacion;
+}
+
+//Interpolacion de variables
+##{primario}{
+	color: $color;
+}
+
+.#{secundario}{
+	color: $secundario;
+}
+
+#{span}{
+	text-transform: $span;
+}
+
+//comentario básico

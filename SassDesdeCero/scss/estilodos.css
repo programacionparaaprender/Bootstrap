@@ -1,0 +1,37 @@
+.dos {
+  font-size: 30px;
+  color: green;
+}
+
+.container {
+  /*background: #7F4545;*/
+  width: 50%;
+}
+.container p {
+  font-size: 20px;
+  text-align: right;
+}
+
+.section {
+  background: #2DF5E0;
+  height: 100vh;
+  padding: 50px;
+}
+
+#parra {
+  font-size: 20px;
+  color: #164806;
+  text-align: center;
+}
+
+#primario {
+  color: red;
+}
+
+.secundario {
+  color: #0D690D;
+}
+
+span {
+  text-transform: uppercase;
+}/*# sourceMappingURL=estilodos.css.map */

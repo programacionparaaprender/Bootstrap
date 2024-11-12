@@ -1,0 +1,49 @@
+
+//Tipo de Datos
+
+/*String*/
+$fuente:quote(Arial);
+/*Numbers*/
+$tamañoletra:20px;
+$duracion: 3s;
+$traslacion:50px;
+$relleno:2em;
+
+/*Colors*/
+$fondo:#8CACC1;
+
+/*Lists*/
+$borde: 2px dashed #195714;
+
+/*Maps*/
+$paletacolores:(
+	uno:#B42B52,
+	dos:blue,
+	tres:rgba(0,0,0,.3)
+);
+
+.parrafo{
+	font-family: $fuente,sans-serif;
+	font-size: $tamañoletra;
+	transition: all $duracion ease;
+	padding: $relleno;
+	background: $fondo;
+	border:$borde; 
+
+	&:hover{
+		transform: translateY($traslacion);
+	}
+}
+
+
+.uno{
+	color: map-get($paletacolores,uno);
+}
+
+.dos{
+	color: map-get($paletacolores,dos);
+}
+
+.tres{
+	color: map-get($paletacolores,tres);
+}

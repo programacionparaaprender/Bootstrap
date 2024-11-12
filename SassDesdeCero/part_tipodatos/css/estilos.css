@@ -1,0 +1,28 @@
+/*String*/
+/*Numbers*/
+/*Colors*/
+/*Lists*/
+/*Maps*/
+.parrafo {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  transition: all 3s ease;
+  padding: 2em;
+  background: #8CACC1;
+  border: 2px dashed #195714;
+}
+.parrafo:hover {
+  transform: translateY(50px);
+}
+
+.uno {
+  color: #B42B52;
+}
+
+.dos {
+  color: blue;
+}
+
+.tres {
+  color: rgba(0, 0, 0, 0.3);
+}
