@@ -1,0 +1,12 @@
+
+
+.container{
+	background:#99D1A0;
+	padding: 20px;
+}
+
+@for $i from 1 through 3{
+	.texto-#{$i}{
+		font-size: 10px * 3;
+	} 
+}

@@ -1,0 +1,43 @@
+.container {
+  background: #9FC2C1;
+  min-height: 80vh;
+  padding: 80px;
+}
+
+.btn {
+  padding: 20px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.xyz {
+  padding: 20px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.sold {
+  background: #1E4C97;
+  color: #ffffff;
+}
+
+.buy {
+  background: #146E23;
+  color: #DED2D2;
+}
+
+.link-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #1B6659;
+  color: #D5CECE;
+}
+
+.xyz {
+  display: inline-block;
+  text-decoration: none;
+  background: #BA700F;
+  color: #D5CECE;
+}

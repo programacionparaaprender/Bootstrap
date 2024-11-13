@@ -1,0 +1,12 @@
+.container {
+  background: #4FAAEE;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.titulo-main {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+
+$paleta:(
+	uno:#2F497A,
+	dos:#5D1F72,
+	tres:#7F9C30
+);
+
+@each $key, $value in $paleta{
+	.colores-#{$key}{
+		color:$value;
+	}
+} 

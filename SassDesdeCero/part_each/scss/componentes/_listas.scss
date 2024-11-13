@@ -1,0 +1,8 @@
+
+$conjunto: red blue green;
+
+@each $boton in $conjunto{
+	.lista-#{$boton}{
+		background:$boton;
+	}
+} 

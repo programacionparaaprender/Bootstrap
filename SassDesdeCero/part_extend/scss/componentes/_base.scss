@@ -1,0 +1,52 @@
+
+
+.container{
+	background: #9FC2C1;
+	min-height: 80vh;
+	padding: 80px;
+}
+
+%boton{
+	padding:20px;
+	border:none;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+%boton2{
+	padding:20px;
+	border:none;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+.btn{
+	@extend %boton;
+}
+
+
+.sold{
+	background:#1E4C97;
+	color: #ffffff;
+}
+
+.buy{
+	background:#146E23;
+	color:#DED2D2;
+}
+
+.link-btn{
+	display: inline-block;
+	text-decoration: none;
+	background:#1B6659;
+	color: #D5CECE;
+}
+
+.xyz{
+	@extend %boton2;
+	display: inline-block;
+	text-decoration: none;
+	background:#BA700F;
+	color: #D5CECE;
+}
+
