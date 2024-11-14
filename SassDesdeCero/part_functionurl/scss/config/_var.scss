@@ -1,0 +1,11 @@
+
+$fondo:#BACBE9;
+$tamañofondo: 50vh;
+$relleno:30px;
+$path:'../img/';
+
+.container{
+	background:$fondo;
+	min-height: $tamañofondo;
+	padding: 0 $relleno;
+}

@@ -1,0 +1,11 @@
+
+
+@mixin parrafodos{
+	margin:40px;
+	color:#9C1F89;
+	font-size: 20px;
+
+	.dsc-span{
+		@content;
+	}
+}

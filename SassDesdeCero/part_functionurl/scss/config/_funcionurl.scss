@@ -1,0 +1,6 @@
+
+@function rutaimg($imagen){
+
+	/*$path:'../img/';*/
+	@return url($path + $imagen);
+}

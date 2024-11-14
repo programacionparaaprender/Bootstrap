@@ -1,0 +1,26 @@
+
+
+@mixin texto($dir, $estilo){
+	.texto-dsc{
+		font-size: 25px;
+		text-align: $dir;
+		font-weight: $estilo;
+	}
+}
+
+
+@mixin botones($selector01:'.log',$selector02:'.sign'){
+	font-size:20px;
+	text-decoration: none;
+	margin: 15px;
+	color: #ffff;
+
+	#{$selector01}{
+		background:#CC2727;
+		padding:25px;
+	}
+	#{$selector02}{
+		background:#2CBF28;
+		padding:25px;
+	}
+}

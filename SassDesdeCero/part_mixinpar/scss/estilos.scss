@@ -1,0 +1,16 @@
+
+
+@import'componentes/variables';
+@import'componentes/container';
+@import'componentes/encabezado';
+
+@import'componentes/mixinpar';
+
+@include titulo;
+
+@include texto(right, bold);
+
+
+.button{
+	@include botones('.log','.sign');
+}

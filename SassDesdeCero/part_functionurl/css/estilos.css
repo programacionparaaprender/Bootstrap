@@ -1,0 +1,24 @@
+.container {
+  background: #BACBE9;
+  min-height: 50vh;
+  padding: 0 30px;
+}
+
+.encabezado {
+  font-size: 40px;
+}
+
+.texto-dsc {
+  color: #3E8016;
+  font-size: 30px;
+}
+
+.texto-em {
+  font-size: 2em;
+}
+
+.multimedia {
+  height: 400px;
+  background: url("../img/imagenprueba2.jpg");
+  background-size: cover;
+}

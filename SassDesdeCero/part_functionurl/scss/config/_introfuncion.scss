@@ -1,0 +1,16 @@
+
+
+@function titulo(){
+	$tamañoencabezado:40px;
+	@return $tamañoencabezado;
+}
+
+
+@function colorparrafo($col){
+	@return $col;
+}
+
+@function tamparrafo($tamaño){
+	$tamaño: $tamaño * 3;
+	@return $tamaño;
+}

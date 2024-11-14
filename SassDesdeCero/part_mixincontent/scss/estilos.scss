@@ -1,0 +1,26 @@
+
+
+@import'componentes/variables';
+@import'componentes/container';
+@import'componentes/encabezado';
+
+@import'componentes/mixinpar';
+@import'componentes/mixincontent';
+
+@include titulo;
+
+@include texto(right, bold);
+
+
+.button{
+	@include botones('.log','.sign');
+}
+
+.dsc-list{
+	@include parrafodos{
+		text-transform: uppercase;
+		color:#165A26;
+		font-weight: bold;
+	}
+}
+

@@ -1,0 +1,25 @@
+
+@import'config/var';
+@import'config/introfuncion';
+@import'config/funcionem';
+@import'config/funcionurl';
+
+
+.encabezado{
+	font-size: titulo();
+}
+
+.texto-dsc{
+	color: colorparrafo(#3E8016);
+	font-size: tamparrafo(10px);
+}
+
+.texto-em{
+	font-size: size(32px);
+}
+
+.multimedia{
+	height: 400px;
+	background:rutaimg("imagenprueba2.jpg");
+	background-size:cover;
+}

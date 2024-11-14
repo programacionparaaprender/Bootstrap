@@ -1,0 +1,9 @@
+
+
+@mixin modotableth($valor){
+
+	@media(max-width: $valor){
+		@content;
+	}
+
+}

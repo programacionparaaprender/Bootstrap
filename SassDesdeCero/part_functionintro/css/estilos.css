@@ -1,0 +1,14 @@
+.container {
+  background: #BACBE9;
+  min-height: 50vh;
+  padding: 0 30px;
+}
+
+.encabezado {
+  font-size: 40px;
+}
+
+.texto-dsc {
+  color: #3E8016;
+  font-size: 30px;
+}

@@ -1,0 +1,58 @@
+
+
+@import'componentes/variables';
+@import'componentes/container';
+@import'componentes/encabezado';
+
+@import'componentes/mixinpar';
+@import'componentes/mixincontent';
+@import'componentes/mixinresp';
+
+
+@include titulo;
+
+@include texto(right, bold);
+
+
+.button{
+	@include botones('.log','.sign');
+}
+
+.dsc-list{
+	@include parrafodos{
+		text-transform: uppercase;
+		color:#165A26;
+		font-weight: bold;
+	}
+}
+
+@include modotableth(1024px){
+	
+	.container {
+	  padding: 30px;
+	}
+	.titulo-main {
+	  font-size: 40px;
+	  text-align: left;
+	  font-weight: normal;
+	}
+
+}
+
+@include modotableth(768px){ 
+	
+	.container {
+	  padding: 20px;
+	}
+	.titulo-main {
+	  font-size: 30px;
+	  text-align: right;
+	  font-style: italic;
+	}
+
+}
+
+
+
+
+

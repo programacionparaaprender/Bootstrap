@@ -1,0 +1,12 @@
+
+@import'config/var';
+@import'config/introfuncion';
+
+.encabezado{
+	font-size: titulo();
+}
+
+.texto-dsc{
+	color: colorparrafo(#3E8016);
+	font-size: tamparrafo(10px);
+}
