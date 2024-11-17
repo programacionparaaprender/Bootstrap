@@ -1,0 +1,39 @@
+
+.clientes{
+	min-height: $alturaseccion;
+	padding:$relleno;
+	background:url(../img/fondotestimonials.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+	color: #ffffff;
+	position:relative;	
+
+	&::before{
+		position:absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		top:0;
+		left: 0;
+		background:rgba(0, 0, 0, .5);
+	}
+
+	.clientes-group{
+		margin-top: 30px;
+	}
+
+	.clientes-card{
+		width: 33%;
+		height: 33%;
+		overflow: hidden;
+		display: inline-block;
+	}
+	
+	.img-perfil{
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		border-radius:50%;
+		border:3px solid #ffffff;
+	}
+}

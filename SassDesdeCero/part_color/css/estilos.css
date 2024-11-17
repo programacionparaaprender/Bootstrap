@@ -1,0 +1,41 @@
+.nombre-color {
+  color: tomato;
+}
+
+.nombre-hex {
+  color: #6E6D8B;
+}
+
+.nombre-rgb {
+  /*color:rgb(24,78,112);*/
+  color: rgba(24, 78, 112, 0.6);
+}
+
+.nombre-hsl {
+  /*color: hsl(83,72,56);*/
+  color: rgba(162, 224, 62, 0.95);
+}
+
+.prop-rgb {
+  red: 39;
+  green: 91;
+  blue: 135;
+  color: #275B87;
+}
+
+.prop-hsl {
+  h: 317.4757281553deg;
+  s: 64.7798742138%;
+  l: 31.1764705882%;
+  color: #831C65;
+}
+
+.fondo-colores {
+  min-height: 20vh;
+  /*background: darken($fondo, 10);*/
+  background: #206020;
+  /*darken($fondo, 20)*/
+  /*lighten($fondo, 10)*/
+  /*saturate($fondo, 15)*/
+  /*desaturate($fondo, 5)*/
+}

@@ -1,0 +1,49 @@
+
+
+.navbar-menu{
+	background: #0C1142;
+	padding: 0 80px;
+	height: $hmenu;
+	width: 100%;
+	line-height: $hmenu;
+
+	position: fixed;
+	z-index: 1;
+
+	.logo{
+		color: #ffffff;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.nav-options{
+		float: right;
+		list-style: none;
+	}
+
+	li{
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+	a{
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 20px;
+		padding:10px;
+		text-transform: uppercase;
+
+		border-radius:3px;
+		transition: all .5s ease;
+
+		&:focus,
+		&:hover{
+			background:#3197B9;
+		}
+	}
+
+	.checkbtn,
+	#check{
+		display: none;
+	}
+}

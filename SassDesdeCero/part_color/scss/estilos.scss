@@ -1,0 +1,69 @@
+
+//Nombre de color
+.nombre-color{
+	color: tomato;
+}
+
+//Color Hexadecimal
+.nombre-hex{
+	color:#6E6D8B;
+}
+
+//Color RGB (RED, GREEN, BLUE)
+.nombre-rgb{
+	/*color:rgb(24,78,112);*/
+
+	//Color RGBA (RED, GREEN, BLUE, ALPHA)
+	color:rgba(24,78,112,.6);
+}
+
+//COLOR HSL (HUE,SATURATION )
+//HUE -- Toanalidad (0 a 360°)
+//SATURATION -- intensida de color, desde grid a un colo oscuro
+//LIGHTNESS -- luminosidad - hace referencia a la cantidad de luz
+			//(0% -- color negro)
+			//(50% -- color puro)
+			//(100% - color blanco)
+
+.nombre-hsl{
+	/*color: hsl(83,72,56);*/
+	//COLOR HSLA (HUE,SATURATION, ALPHA )
+	color: hsla(83,72,56, .95);
+}
+
+
+.prop-rgb{
+	$propcolor:#275B87;
+
+	//PROPIEDADES RGB
+	red: red($propcolor);
+	green: green($propcolor);
+	blue: blue($propcolor);
+	color:$propcolor;
+}
+
+.prop-hsl{
+	$prophsl:#831C65;
+
+	h: hue($prophsl);
+	s: saturation($prophsl);
+	l: lightness($prophsl);
+	//PROPIEDADES HSL
+	color:$prophsl;
+}
+
+.fondo-colores{
+	$fondo: green;
+
+
+	min-height: 20vh;
+	/*background: darken($fondo, 10);*/
+	background: desaturate($fondo, 50);
+
+	//Efectos para colores HTML
+	/*darken($fondo, 20)*/
+	/*lighten($fondo, 10)*/
+	/*saturate($fondo, 15)*/
+	/*desaturate($fondo, 5)*/
+}
+

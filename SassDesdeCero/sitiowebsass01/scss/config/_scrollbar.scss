@@ -1,0 +1,23 @@
+/*-----------------------------------------------------*/
+/*------------------Estilos ScrollBar------------------*/
+/*-----------------------------------------------------*/
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+/*-- Fondo Scrollbar --*/
+::-webkit-scrollbar-track{
+	background:#3A3636;
+}
+
+/*-- Barra Interna Scroll --*/
+::-webkit-scrollbar-thumb{
+	background:#615B5B;
+}
+
+
+/*-- Barra Interna Scroll-hover --*/
+::-webkit-scrollbar-thumb:hover{
+	background:#534D4D;
+}

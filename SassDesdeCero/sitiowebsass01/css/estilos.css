@@ -1,0 +1,417 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-menu {
+  background: #0C1142;
+  padding: 0 80px;
+  height: 70px;
+  width: 100%;
+  line-height: 70px;
+  position: fixed;
+  z-index: 1;
+}
+.navbar-menu .logo {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar-menu .nav-options {
+  float: right;
+  list-style: none;
+}
+.navbar-menu li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.navbar-menu a:focus, .navbar-menu a:hover {
+  background: #3197B9;
+}
+.navbar-menu .checkbtn,
+.navbar-menu #check {
+  display: none;
+}
+
+.banner {
+  min-height: 100vh;
+  padding: 80px;
+  background: url(../img/bannerprincipal.jpg);
+  background-size: cover;
+  position: relative;
+}
+.banner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner .banner-text {
+  color: #ffffff;
+  position: relative;
+  -webkit-transform: translateY(30vh);
+          transform: translateY(30vh);
+  display: block;
+}
+.banner h2 {
+  font-size: 50px;
+}
+.banner p, .banner a {
+  font-size: 20px;
+}
+.banner a {
+  text-decoration: none;
+  color: #F2E9E9;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  border: 3px solid #F2E9E9;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.banner a:hover {
+  background: #F2E9E9;
+  color: #2B2727;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.container h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+.container p {
+  padding: 15px 50px;
+}
+
+.servicios {
+  min-height: 100vh;
+  position: relative;
+  padding: 80px;
+  background: #4D5597;
+  color: #ffffff;
+}
+.servicios .servicios-img {
+  margin-top: 30px;
+}
+.servicios .servicios-imgx {
+  width: 33%;
+  height: 33%;
+  display: inline-block;
+  overflow: hidden;
+}
+.servicios .img-job {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.clientes {
+  min-height: 100vh;
+  padding: 80px;
+  background: url(../img/fondotestimonials.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  position: relative;
+}
+.clientes::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.clientes .clientes-group {
+  margin-top: 30px;
+}
+.clientes .clientes-card {
+  width: 33%;
+  height: 33%;
+  overflow: hidden;
+  display: inline-block;
+}
+.clientes .img-perfil {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+
+.contacto {
+  min-height: 100vh;
+  padding: 80px;
+  position: relative;
+}
+.contacto .contacto-group {
+  margin-top: 30px;
+}
+.contacto .form-contact {
+  width: 50%;
+  float: left;
+}
+.contacto .form-control {
+  width: 85%;
+  border: 1.5px solid #c7c7c7;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin: 1.2rem;
+  display: block;
+  font-size: 1rem;
+}
+.contacto .submt-btn {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #0C1142;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 1.2rem;
+  cursor: pointer;
+}
+.contacto .contacto-img {
+  width: 50%;
+  overflow: hidden;
+}
+.contacto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  min-height: 10vh;
+  background: #0C1142;
+  color: #ffffff;
+  padding: 0 80px;
+}
+.footer .social {
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+  text-align: center;
+}
+.footer label a {
+  color: #ffffff;
+  font-size: 25px;
+  background: #0C1142;
+  padding: 0 10px;
+}
+.footer label a:hover {
+  color: #E1B51C;
+}
+.footer .copr {
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .navbar-menu {
+    padding: 0 60px;
+  }
+  .navbar-menu li {
+    margin: 0 2px;
+  }
+  .navbar-menu a {
+    font-size: 16px;
+  }
+
+  .banner, .servicios, .clientes, .contacto {
+    padding: 60px;
+  }
+
+  .banner h2 {
+    font-size: 47px;
+  }
+  .banner p, .banner a {
+    font-size: 18px;
+  }
+
+  .container h2 {
+    font-size: 40px;
+  }
+
+  .servicios .servicios-imgx {
+    width: 40%;
+    height: 40%;
+  }
+  .servicios h4 {
+    font-size: 14px;
+  }
+
+  .clientes .clientes-card {
+    width: 40%;
+    height: 40%;
+  }
+  .clientes .img-perfil {
+    width: 180px;
+    height: 180px;
+  }
+  .clientes p {
+    font-size: 14px;
+  }
+
+  .contacto .form-control {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.8rem;
+  }
+  .contacto .submt-btn {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    min-height: 15vh;
+  }
+  .footer .social {
+    width: 100%;
+  }
+  .footer .copr {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-menu {
+    padding: 0 40px;
+  }
+  .navbar-menu .nav-options {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #135A67;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .navbar-menu li {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #E3DCDC;
+    z-index: 1;
+  }
+  .navbar-menu li:hover {
+    background: #E2D4D4;
+  }
+  .navbar-menu a {
+    font-size: 18px;
+  }
+  .navbar-menu a:hover {
+    background: transparent;
+    color: #252121;
+  }
+  .navbar-menu .checkbtn {
+    display: block;
+    float: right;
+    color: #ffffff;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .navbar-menu #check:checked ~ ul {
+    left: 0;
+  }
+
+  .banner, .servicios, .clientes, .contacto {
+    padding: 40px;
+  }
+
+  .banner h2 {
+    font-size: 45px;
+  }
+  .banner p, .banner a {
+    font-size: 16px;
+  }
+
+  .container h2 {
+    font-size: 35px;
+  }
+
+  .servicios {
+    padding: 40px;
+  }
+  .servicios .servicios-imgx {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .clientes .clientes-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contacto .form-contact, .contacto .contacto-img {
+    width: 100%;
+  }
+  .contacto .form-contact .form-control,
+.contacto .form-contact .submt-btn {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+/*-----------------------------------------------------*/
+/*------------------Estilos ScrollBar------------------*/
+/*-----------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*-- Fondo Scrollbar --*/
+::-webkit-scrollbar-track {
+  background: #3A3636;
+}
+
+/*-- Barra Interna Scroll --*/
+::-webkit-scrollbar-thumb {
+  background: #615B5B;
+}
+
+/*-- Barra Interna Scroll-hover --*/
+::-webkit-scrollbar-thumb:hover {
+  background: #534D4D;
+}
